@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<head>
-
-</head>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Md. Afraim Bin Zahangir">
+        <meta name="description" content="Google Drive Direct Download Link Generator from GitHub hosting">
+        <title>
+            DirectDownloader
+        </title>
+        <link rel="stylesheet" href="CSS/mycss.css">
 <body>
-
-    <form name="myForm">
-        <input type="text" placeholder="Full URL" id="flink" required>
-        <input type="button" value="Submit" onclick="validation()">
-        
-    </form>
-    <input type="text" id="Dlink" style ="cursor: pointer;" value ="help" disabled></input><button onclick="myFunction()"id="copy">Copy</button>
-
+    <div class="header"><p id="Pname">Direct Download Link Generator</p></div>
+    <div class="Pform">
+        <form name="myForm">
+            <input type="url" placeholder="Full URL" id="flink" required>
+            <input type="button" value="Submit" onclick="validation()">
+            
+        </form>
+        <input type="text" id="Dlink" style ="cursor: pointer;" value ="" disabled></input>
+        <div id="afterSubmit"><button onclick="myFunction()"id="copy">💾Copy</button></div>    
+    </div>
     <script src="JS/myjs.js"></script>
 
    
