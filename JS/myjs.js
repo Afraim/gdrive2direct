@@ -1,20 +1,23 @@
-        function validation(){
-            let text = document.querySelector("input").value;
-            if(text != ""){
-                let url;
+document.getElementById("Dlink").style.display = "none";
+function validation(){
+        let text = document.querySelector("input").value;
+        if(text != ""){
+            let url;
   
-                try {
-                  url = new URL(text);
-                  value(url.toString());
-                } catch (_) {
-                   return false;  
-                }
+            try {
+              url = new URL(text);
+              value(url.toString());
+            } catch (_) {
+               return false;  
+            }
                 
+        }
+        else{
+            
+            document.getElementById("Dlink").style.display = "none";
+            
             }
-            else{
-                document.getElementById("Dlink").value = "Empty!";
-            }
-        }    
+    }    
 
         function value(T){
             var Array = T.split("/");
@@ -22,10 +25,12 @@
             const TEXT = "https://drive.google.com/uc?export=download&id=";
             if(TEXT + Array[5]!="https://drive.google.com/uc?export=download&id=undefined"){
                 document.getElementById("Dlink").value = TEXT + Array[5];
+                document.getElementById("Dlink").style.display = "block";
                 document.getElementById("afterSubmit").style.display = "block";
             }
             else{
-                document.getElementById("Dlink").value = "";
+                document.getElementById("Dlink").style.display = "none";
+
                 document.getElementById("afterSubmit").style.display = "none";    
             }
         }
@@ -43,7 +48,7 @@
             navigator.clipboard.writeText(copyText.value);
             document.getElementById("copy").innerHTML = "✔Copied";
             setTimeout(() => {
-                document.getElementById("copy").innerHTML = "Copy";
+                document.getElementById("copy").innerHTML = "💾Copy";
                 
             }, 1000);
         }

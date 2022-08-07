@@ -1,25 +1,50 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Md. Afraim Bin Zahangir">
-        <meta name="description" content="Google Drive Direct Download Link Generator from GitHub hosting">
-        <title>
-            DirectDownloader
-        </title>
-        <link rel="stylesheet" href="CSS/mycss.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Md. Afraim Bin Zahangir">
+    <meta name="description" content="Google Drive Direct Download Link Generator from GitHub hosting">
+    <title>
+        DirectDownloader
+    </title>
+    <link rel="stylesheet" href="CSS/mycss.css">
+</head>
 <body>
+    <nav>
+               
+        <ul class= "menubar">
+            <!-- <li class="list"><a  href="./contact.html">Contact</a></li> -->
+            <li class="list"><a href="https://sites.google.com/view/afraim-zahangir/home" target="_blank">Afraim</a></li>
+            <li class="list"><a href="./about.html">About</a></li>   
+            <li class="here" ><a href="./index.html">Direct Download</a></li>
+        </ul>
+
+    </nav>
     <div class="header"><p id="Pname">Direct Download Link Generator</p></div>
-    <div class="Pform">
-        <form name="myForm">
-            <input type="url" placeholder="Full URL" id="flink" required>
-            <input type="button" value="Submit" onclick="validation()">
-            
-        </form>
-        <input type="text" id="Dlink" style ="cursor: pointer;" value ="" disabled></input>
-        <div id="afterSubmit"><button onclick="myFunction()"id="copy">💾Copy</button></div>    
+    <div class="body1">
+        Paste your URL here
     </div>
+    <div class="Pform">
+        <input type="url" placeholder="Full URL" id="flink" required>
+       <div class="button1" onclick="validation()">Submit</div>
+
+       
+        
+        <input type="text" id="Dlink" style ="cursor:text;" value ="" disabled></input>
+        <div id="afterSubmit"><div class="button1" onclick="myFunction()"id="copy">💾Copy</div></div>    
+    </div>
+    
+    <div class="body1">
+        Steps that are to be followed
+    </div>
+    <div class="flexbox">
+        Step 1<div class="image"><img src="images/1.PNG" alt="Google Drive folder" width="800" height="367"></div>Go to Google Drive
+        Step 2<div class="image"><img src="images/2.PNG" alt="Google Drive folder" width="800" height="367"></div>
+        Step 3<div class="image"><img src="images/3.PNG" alt="Google Drive folder" width="800" height="367"></div>
+        Step 4<div class="image"><img src="images/4.PNG" alt="Google Drive folder" width="800" height="367"></div>
+    </div>
+
     <script src="JS/myjs.js"></script>
 
-   
 </body>
 </html>
