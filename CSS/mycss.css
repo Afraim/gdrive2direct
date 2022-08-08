@@ -137,20 +137,22 @@ flex-direction: row;
 }
 #flink{
     font-family: sans-serif;
-    font-size: 1.1em;
+    font-size: 1.5em;
     margin-left: 10vw;
     margin-right: 10vw;
     width: 80vw;
-    height: 15vh;
+    height: 8vh;
     text-align: center;
 }
 #Dlink{
+
+    color: rgb(50, 0, 97);
     font-family: sans-serif;
-    font-size: 1.1em;
+    font-size: 1.5em;
     margin-left: 10vw;
     margin-right: 10vw;
     width: 80vw;
-    height: 15vh;
+    height: 7vh;
     text-align: center;
     border: none;
     margin-top: 1em;
@@ -158,9 +160,18 @@ flex-direction: row;
 }
 .button1{
     cursor: pointer;
-    margin: 3vh;
-    
+    margin: 2vh;
+    border: solid black;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
 }
+.button1 .first{
+    background-color: aqua;
+    color: rgb(50, 0, 97);
+}
+
 .flexbox{
     width: 80vw;
     margin-left: 10vw;
