@@ -1,5 +1,7 @@
 document.getElementById("Dlink").style.display = "none";
+document.getElementsByClassName("error")[0].style.display = "none"
 function validation(){
+        document.getElementsByClassName("error")[0].style.display = "none"
         let text = document.querySelector("input").value;
         if(text != ""){
             let url;
@@ -29,8 +31,8 @@ function validation(){
                 document.getElementById("afterSubmit").style.display = "block";
             }
             else{
+                document.getElementsByClassName("error")[0].style.display = "block"
                 document.getElementById("Dlink").style.display = "none";
-
                 document.getElementById("afterSubmit").style.display = "none";    
             }
         }
